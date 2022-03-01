@@ -21,3 +21,39 @@ go run .
     --request "POST" \
     --data '{"id": "5","title": "For the ones to whom neither the past nor the future belongs","artist": "All shall be well","premier": 11.2014}' 
     ```
+
+### Output
+```
+[
+    {
+        "id": "1",
+        "title": "Interstellar",
+        "artist": "Hans Zimmer",
+        "premier": 10.2014
+    },
+    {
+        "id": "2",
+        "title": "Building Light",
+        "artist": "Anne Sophie Versnaeyen",
+        "premier": 2018
+    },
+    {
+        "id": "3",
+        "title": "Zen",
+        "artist": "Torin Borrowdale",
+        "premier": 3.2018
+    },
+    {
+        "id": "4",
+        "title": "Married Life",
+        "artist": "Jason Lyle Black",
+        "premier": 10.2015
+    },
+    {
+        "id": "5",
+        "title": "For the ones to whom neither the past nor the future belongs",
+        "artist": "All shall be well",
+        "premier": 11.2014
+    }
+]
+```
