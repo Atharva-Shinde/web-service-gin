@@ -10,8 +10,8 @@ go run .
  This API has two endpoints GET and POST
  All the data is stored in the memory (rather than using a database)
 - GET: 
-    The `curl localhost:8080/books` fetches data of the books in JSON format,
-    or you can view the JSON output on your browser through: `localhost:8080/books`
+    The `curl localhost:8080/covers` fetches data of the books in JSON format,
+    or you can view the JSON output on your browser through: `localhost:8080/covers`
 - POST:
     Use the following command to add new book to the existing list
     ``` 
