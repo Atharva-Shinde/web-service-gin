@@ -1,4 +1,5 @@
 ## A Go RESTful API using Gin Framework
+ All the data is stored in the memory (rather than using a database)
 
 ## To try this API, execute these command in the root directory of the project
 ```
@@ -8,7 +9,7 @@ go run .
 ----
 
  This API has two endpoints GET and POST
- All the data is stored in the memory (rather than using a database)
+
 - GET: 
     The `curl localhost:8080/covers` fetches data of the books in JSON format,
     or you can view the JSON output on your browser through: `localhost:8080/covers`
