@@ -23,13 +23,12 @@ var covers = []cover{
 }
 
 func main() {
-	// to initialise gin router
 	router := gin.Default()
 	router.GET("/covers", getCovers)
+	router.GET("/covers/:id", getAlbumByID)
 	router.POST("/covers", postCovers)
 
 	router.Run("localhost:8080")
-
 }
 
 // gin.Context carries request details, validates and serializes JSON, and more
@@ -46,4 +45,20 @@ func postCovers(c *gin.Context) {
 
 	covers = append(covers, newCover)
 	c.IndentedJSON(http.StatusCreated, covers)
+}
+
+// getAlbumByID locates the cover whose ID value matches the id
+// parameter sent by the client, then returns that cover as a response.
+func getAlbumByID(c *gin.Context) {
+	id := c.Param("id")
+
+	// Loop over the list of covers, looking for
+	// an album whose ID value matches the parameter.
+	for _, a := range covers {
+		if a.ID == id {
+			c.IndentedJSON(http.StatusOK, a)
+			return
+		}
+	}
+	c.IndentedJSON(http.StatusNotFound, gin.H{"message": "album not found"})
 }
