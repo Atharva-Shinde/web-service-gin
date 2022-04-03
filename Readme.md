@@ -58,3 +58,13 @@ go run .
     }
 ]
 ```
+
+#### curl http:localhost:8080/covers/2
+```
+{
+    "id": "2",
+    "title": "Building Light",
+    "artist": "Anne Sophie Versnaeyen",
+    "premier": 2018
+}
+```
