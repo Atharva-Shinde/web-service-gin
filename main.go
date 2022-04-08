@@ -25,7 +25,7 @@ var covers = []cover{
 func main() {
 	router := gin.Default()
 	router.GET("/covers", getCovers)
-	router.GET("/covers/:id", getAlbumByID)
+	router.GET("/covers/:id", getCoverByID)
 	router.POST("/covers", postCovers)
 
 	router.Run("localhost:8080")
@@ -47,9 +47,9 @@ func postCovers(c *gin.Context) {
 	c.IndentedJSON(http.StatusCreated, covers)
 }
 
-// getAlbumByID locates the cover whose ID value matches the id
+// getCoverByID locates the cover whose ID value matches the id
 // parameter sent by the client, then returns that cover as a response.
-func getAlbumByID(c *gin.Context) {
+func getCoverByID(c *gin.Context) {
 	id := c.Param("id")
 
 	// Loop over the list of covers, looking for
