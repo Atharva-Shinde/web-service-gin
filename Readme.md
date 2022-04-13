@@ -11,10 +11,10 @@ go run .
  This API has two endpoints GET and POST
 
 - GET: 
-    The `curl localhost:8080/covers` fetches data of the books in JSON format,
-    or you can view the JSON output on your browser through: `localhost:8080/covers`
+    - The `curl localhost:8080/covers` fetches data of the covers in JSON format,or you can view the JSON output on your browser through: `localhost:8080/covers`
+    - `curl http:localhost:8080/covers/id` fetches the cover with the assigned id.
 - POST:
-    Use the following command to add new book to the existing list
+    Use the following command to add new cover to the existing list
     ``` 
     curl http://localhost:8080/covers \
     --include \
