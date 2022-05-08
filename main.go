@@ -2,16 +2,18 @@ package main
 
 import (
 	"net/http"
+	"time"
 
 	"github.com/gin-gonic/gin"
 )
 
 // cover represents the structure of the data of each cover
 type cover struct {
-	ID               string  `json:"id"`
-	Title            string  `json:"title"`
-	Artist           string  `json:"artist"`
-	PremierMonthYear float64 `json:"premier"`
+	ID               string    `json:"id"`
+	Title            string    `json:"title"`
+	Artist           string    `json:"artist"`
+	PremierMonthYear float64   `json:"premier"`
+	TimeAdded        time.Time `json:"time_added"`
 }
 
 // slice which contains the data of each album
