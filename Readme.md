@@ -22,7 +22,6 @@ go run .
 
 - GET: 
     - The `curl localhost:8080/covers` fetches data of the covers in JSON format,or you can view the JSON output on your browser through: `localhost:8080/covers`
-    - `curl http:localhost:8080/covers/id` fetches the cover with the assigned id.
 ### Output
 ```
 [
@@ -64,6 +63,7 @@ go run .
 ]
 ```
 
+    - `curl http:localhost:8080/covers/id` fetches the cover with the assigned id.
 #### curl http://localhost:8080/covers/2
 ```
 {
