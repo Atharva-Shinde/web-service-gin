@@ -1,7 +1,7 @@
 ## A Go RESTful API using Gin Framework
  All the data is stored in the memory (rather than using a database)
 
-## To try this API, execute these command in the root directory of the project
+## To try this API, execute these commands in the root directory of the project
 ```
 go get .
 go run .
