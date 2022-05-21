@@ -63,7 +63,7 @@ go run .
 ]
 ```
 
-    - `curl http:localhost:8080/covers/id` fetches the cover with the assigned id.
+    - Fetch the cover with the assigned id using `curl http:localhost:8080/covers/id`
 #### curl http://localhost:8080/covers/2
 ```
 {
