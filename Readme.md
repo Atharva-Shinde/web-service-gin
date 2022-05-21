@@ -11,7 +11,7 @@ go run .
  This API has two endpoints POST and GET
 
 - POST:
-    Use the following command to add new cover to the existing list
+    Use the following piece of code to add new cover to the existing list
     ``` 
     curl http://localhost:8080/covers \
     --include \
