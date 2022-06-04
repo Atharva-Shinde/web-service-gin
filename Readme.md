@@ -8,7 +8,7 @@ go run .
 ```
 ----
 
- This API has two endpoints POST and GET
+ The API has two endpoints POST and GET
 
 - POST:
     Use the following piece of code to add new cover to the existing list
